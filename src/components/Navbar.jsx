@@ -4,7 +4,7 @@ import { RiCloseLine, RiMoonFill } from "react-icons/ri";
 import { FiSun } from "react-icons/fi";
 import { IoMdLogIn } from "react-icons/io";
 import { IoMenu } from "react-icons/io5";
-import { GrClose } from "react-icons/gr";
+
 import { navItems } from "../data";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
@@ -160,7 +160,10 @@ export default function Navbar() {
         className={`${isOpen ? "block" : "hidden"} md:hidden`}
         id="mobile-menu"
       >
-        <div class="px-2 pt-2 pb-3 space-y-1 bg-white/70 backdrop-blur-sm rounded-lg border border-blue-500">
+        <div
+          className="px-2 pt-2 pb-3 space-y-1 bg-white/70 backdrop-blur-sm rounded-lg 
+        border border-[#546f84]/60 shadow-md"
+        >
           {navItems.map((item, index) => {
             return (
               <a
@@ -175,10 +178,10 @@ export default function Navbar() {
             );
           })}
 
-          <div class="px-3 py-2">
-            <button class="w-full relative ">
-              <div class="relative px-4 py-4 bg-linear-to-r from bg-[#546f84] to-[#273844] rounded-lg leading-none flex items-center justify-center">
-                <span class="text-white group-hover:text-white transition duration-200">
+          <div className="px-3 py-2">
+            <button className="w-full relative ">
+              <div className="relative px-4 py-4 bg-linear-to-r from bg-[#546f84] to-[#273844] rounded-lg leading-none flex items-center justify-center">
+                <span className="text-white group-hover:text-white transition duration-200">
                   SIGN IN
                 </span>
               </div>
@@ -189,3 +192,4 @@ export default function Navbar() {
     </nav>
   );
 }
+
