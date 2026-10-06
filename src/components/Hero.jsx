@@ -52,7 +52,7 @@ const Hero = () => {
                 data-aos="fade-up"
                 data-aos-delay="900"
               >
-                <a href="#contact" download className="w-full sm:w-auto">
+                <a href="#contact"  className="w-full sm:w-auto">
                   <button
                     className="w-full sm:w-auto inline-flex items-center hover:shadow-[0_0_40px_rgb(84,111,132,0.7)] 
                                 justify-center text-white bg-linear-to-r from bg-[#546f84] to-[#273844]
