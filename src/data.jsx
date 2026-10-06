@@ -30,37 +30,43 @@ export const skills = [
   {
     id: 1,
     title: "Litigation",
-    description: "Optimized for speed and built with modern React standards.",
+    description:
+      "The Firm is involved in litigation generally across courts in Nigeria .",
     linkText: "Learn More",
   },
   {
     id: 2,
     title: "Dispute Resolution (ADR)",
-    description: "Looks great on mobile, tablet, and desktop screens.",
+    description:
+      "Alternative Dispute Resolution (ADR) which encourages amicable resolution of disputes ",
     linkText: "Explore",
   },
   {
     id: 3,
     title: "Legal Drafting",
-    description: "Style easily using Tailwind utility classes.",
+    description:
+      "We also do legal drafting of documents, agreements for our clients.",
     linkText: "Discover",
   },
   {
     id: 4,
     title: "Company Registration",
-    description: "Style easily using Tailwind utility classes.",
+    description:
+      "Wec also do registration of company, business name, Copyright and sundry matters",
     linkText: "Discover",
   },
   {
     id: 5,
     title: "Matrimonial Matters",
-    description: "Style easily using Tailwind utility classes.",
+    description:
+      "We also cater to matters of child custody and maintenance, separation and property disposition.",
     linkText: "Discover",
   },
   {
     id: 6,
     title: "Property Consultancy",
-    description: "Style easily using Tailwind utility classes.",
+    description:
+      "Our Firm is involved in property management and sales and transfer of tltle..",
     linkText: "Discover",
   },
 ];
