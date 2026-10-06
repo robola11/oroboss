@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { GoLaw } from "react-icons/go";
-import { RiMoonFill } from "react-icons/ri";
+import { RiCloseLine, RiMoonFill } from "react-icons/ri";
 import { FiSun } from "react-icons/fi";
 import { IoMdLogIn } from "react-icons/io";
 import { IoMenu } from "react-icons/io5";
@@ -146,7 +146,7 @@ export default function Navbar() {
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
-                <GrClose className="w-8 h-8 " />
+                <RiCloseLine className="w-8 h-8 " />
               ) : (
                 <IoMenu className="w-9 h-9" />
               )}
@@ -160,31 +160,30 @@ export default function Navbar() {
         className={`${isOpen ? "block" : "hidden"} md:hidden`}
         id="mobile-menu"
       >
-        <div
-          className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-linear-to-r from bg-[#546f84] to-[#273844]
-           transition-all duration-300 shadow-md backdrop-blur-md"
-        >
+        <div class="px-2 pt-2 pb-3 space-y-1 bg-white/70 backdrop-blur-sm rounded-lg border border-blue-500">
           {navItems.map((item, index) => {
             return (
               <a
                 key={index}
                 href={item.href}
                 onClick={() => setIsOpen(!isOpen)}
-                className="block hover:bg-slate-700 hover:text-zinc-200 px-3 py-2
-                 rounded-md text-base font-medium text-zinc-300
-                "
+                className="block px-4 py-2 rounded-md text-base font-medium text-[#546f84]
+                dark:text-zinc-900 hover:text-white hover:bg-[#546f84] transition-all duration-200"
               >
                 {item.name}
               </a>
             );
           })}
 
-          <a
-            href="#"
-            className="block text-zinc-300 hover:bg-slate-700 px-3 py-2 hover:text-zinc-200 rounded-md text-base font-medium"
-          >
-            Sign In
-          </a>
+          <div class="px-3 py-2">
+            <button class="w-full relative ">
+              <div class="relative px-4 py-4 bg-linear-to-r from bg-[#546f84] to-[#273844] rounded-lg leading-none flex items-center justify-center">
+                <span class="text-white group-hover:text-white transition duration-200">
+                  SIGN IN
+                </span>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
