@@ -179,7 +179,8 @@ export default function Navbar() {
           })}
 
           <div className="px-3 py-2">
-            <button className="w-full relative ">
+            <button  onClick={() => setIsOpen(!isOpen)}
+              className="w-full relative ">
               <div className="relative px-4 py-4 bg-linear-to-r from bg-[#546f84] to-[#273844] rounded-lg leading-none flex items-center justify-center">
                 <span className="text-white group-hover:text-white transition duration-200">
                   SIGN IN
